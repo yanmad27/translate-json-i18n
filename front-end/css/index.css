@@ -73,3 +73,14 @@ textarea.form-control {
     flex-wrap: wrap;
     gap: 12px;
 }
+
+@media screen and (max-width: 1024px) {
+    .contact-section .col-md-6 {
+        width: 100%;
+    }
+
+    .form-line {
+        border: none;
+    }
+
+}
