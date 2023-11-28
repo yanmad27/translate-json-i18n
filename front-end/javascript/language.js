@@ -1,5 +1,9 @@
 var languages = [
     {
+        "code": "vi",
+        "name": "Vietnamese"
+    },
+    {
         "code": "bg",
         "name": "Bulgarian"
     },
@@ -38,10 +42,7 @@ var languages = [
         "code": "lo",
         "name": "Lao"
     },
-    {
-        "code": "vi",
-        "name": "Vietnamese"
-    },
+
 ]
 
 // create html checkbox list with wrap auto style  from languages array
@@ -54,7 +55,7 @@ function createLanguageList() {
         checkbox.value = languages[i].code;
         checkbox.id = languages[i].code;
         checkbox.style = "margin:0;"
-        checkbox.checked = true;
+        checkbox.checked = languages[i].code === 'vi';
         var label = document.createElement('label')
         label.htmlFor = languages[i].code;
         label.style = "margin:0;"

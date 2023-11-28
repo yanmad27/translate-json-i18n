@@ -3,6 +3,7 @@
 var zip = new JSZip();
 
 jQuery("#download").on("click", async function () {
+    NProgress.start();
     const form = $('#form-data').serializeArray()
     try {
 
@@ -50,5 +51,8 @@ jQuery("#download").on("click", async function () {
 
         });
     }
+
+    NProgress.done();
+
 
 });
