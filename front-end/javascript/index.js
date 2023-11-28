@@ -2,7 +2,7 @@
 
 var zip = new JSZip();
 
-jQuery("#download").on("click", async function (event) {
+jQuery("#download").on("click", async function () {
     const form = $('#form-data').serializeArray()
     try {
 
@@ -25,7 +25,7 @@ jQuery("#download").on("click", async function (event) {
 
     try {
 
-        const results = await fetch(process.env.BE_URL + '/translate', {
+        const results = await fetch('https://api-translate.rsrm.dev/translate', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(body)
