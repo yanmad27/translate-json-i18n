@@ -54,8 +54,8 @@ label {
 }
 
 textarea.form-control {
-    height: 135px;
-    resize: none; /*disables the resize function*/
+    height: 200px;
+    resize: vertical; /*disables the resize function*/
     /* margin-top: px;*/
 }
 
@@ -73,6 +73,7 @@ textarea.form-control {
     flex-wrap: wrap;
     gap: 12px;
 }
+
 
 @media screen and (max-width: 1024px) {
     .contact-section .col-md-6 {

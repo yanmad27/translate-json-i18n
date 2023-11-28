@@ -29,7 +29,7 @@ const translate = async (target, curr) => {
     }
     return result
 }
-const translateAll = async (targets,) => {
+const translateAll = async (targets, json) => {
 
     const results = {}
 
